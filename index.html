@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bài Tập JS - 2</h1>
+      <div class="grid-box">
+        <div class="box box-1">
+          <div class="card">
+            <div class="title">
+              <h2>Sắp Xếp Tăng Dần</h2>
+            </div>
+            <form action="">
+              <div class="horizontal-group">
+                <label for="realNum">Tập Hợp Số Thực</label>
+                <textarea
+                  class="form-control"
+                  type="text"
+                  placeholder="42,62,7,1"
+                  name="realNum"
+                  id="realNum"
+                ></textarea>
+              </div>
+
+              <div class="horizontal-group">
+                <label for="sortedNum">Sắp Xếp Tăng Dần</label>
+                <textarea
+                  class="form-control"
+                  type="text"
+                  placeholder=""
+                  aria-label="readonly input example"
+                  name="sortedNum"
+                  id="sortedNum"
+                  readonly
+                ></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="box box-2">
+          <div class="card">
+            <div class="title">
+              <h2>Tính Giá Trị Trung Bình</h2>
+            </div>
+            <form action="">
+              <div class="group">
+                <div>
+                  <label> User </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1">Ba</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2">Mẹ</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3">Anh Trai</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio4"
+                    value="4"
+                  />
+                  <label class="form-check-label" for="inlineRadio4">Em Gái</label>
+                </div>
+              </div>
+
+              <div class="hello result" id="hello"></div>
+            </form>
+            <!-- Modal -->
+          </div>
+        </div>
+        <div class="box box-3">
+          <div class="card">
+            <div class="title">
+              <h2>Chẵn & Lẻ</h2>
+            </div>
+            <form action="">
+              <div class="horizontal-group">
+                <label for="realNumBox3">Tập Hợp Số Thực</label>
+                <textarea
+                  class="form-control"
+                  type="text"
+                  placeholder="42,62,7,1"
+                  name="realNumBox3"
+                  id="realNumBox3"
+                ></textarea>
+              </div>
+
+              <div class="horizontal-group">
+                <label for="sortedNumBox3">Phân Loại</label>
+                <textarea
+                  class="form-control"
+                  type="text"
+                  placeholder=""
+                  aria-label="readonly input example"
+                  name="sortedNumBox3"
+                  id="sortedNumBox3"
+                  readonly
+                ></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="box box-4">
+          <div class="card">
+            <div class="title"><h2>Tam Giác</h2></div>
+
+            <form action="">
+              <div class="horizontal-group">
+                <label for="side1">Cạnh 1</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name="side1"
+                  id="side1"
+                  placeholder="0"
+                />
+              </div>
+              <div class="horizontal-group">
+                <label for="side2">Cạnh 2</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name="side2"
+                  id="side2"
+                  placeholder="0"
+                />
+              </div>
+              <div class="horizontal-group">
+                <label for="side3">Cạnh 3</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name="side3"
+                  id="side3"
+                  placeholder="0"
+                />
+              </div>
+              <div class="horizontal-group">
+                <button type="button" class="btn btn-primary cusBtn">
+                  find
+                </button>
+              </div>
+
+              <div class="card card--modal" id="modalBox4">
+                <div class="title">
+                  <h2>Kết Quả</h2>
+                </div>
+                <div id="triangleImg"></div>
+                <div class="result" id="box4Result"></div>
+                <button
+                  type="button"
+                  class="btn btn-primary cusBtn"
+                  id="backBox4"
+                >
+                  Back
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.jsx"></script>
+  </body>
+</html>
