@@ -151,8 +151,7 @@ realNumBox3Input.addEventListener("input", function (e) {
     var array = toArr(numericStr);
 
     var numericArr = toNumber(array);
-    //   var sortedArr = sortAZ(numericArr);
-    //   console.log("🚀 ~ file: main.jsx:17 ~ sortedArr:", sortedArr);
+
 
     var evenNum = isEven(numericArr);
 
@@ -213,25 +212,25 @@ button.addEventListener("click", function () {
   modal4.style.visibility = "visible";
 
   if (sideA === sideB && sideA === sideC) {
-    img.style.background = `url(./Equilateral-triangle.svg.png) no-repeat center/contain`;
+    img.style.background = `url(../asset/img/Equilateral-triangle.svg.png) no-repeat center/contain`;
     box4Result.innerHTML = `<p>Type: Equilateral</p>`;
   } else if (sideA === sideB || sideA === sideC || sideB === sideC) {
     console.log("Situation 2");
     result4.innerHTML = `<p>Type: Isosceles</p>`;
-    img.style.background = `url(./1200px-Triangle.Isosceles.svg.png) no-repeat center/contain`;
+    img.style.background = `url(../asset/img/1200px-Triangle.Isosceles.svg.png) no-repeat center/contain`;
     if (checkPythagorean(sideA, sideB, sideC)) {
-      img.style.background = `url(./right-isosceles-triangle.jpg) no-repeat center/contain`;
+      img.style.background = `url(../asset/img/right-isosceles-triangle.jpg) no-repeat center/contain`;
       result4.innerHTML = `<p>Type: Right Isosceles</p>`;
     }
   } else {
     console.log(checkPythagorean(sideA, sideB, sideC));
     if (checkPythagorean(sideA, sideB, sideC) === true) {
       result4.innerHTML = `<p>Type: Right</p>`;
-      img.style.background = `url(./right-triangle-with-square.png) no-repeat center/contain`;
+      img.style.background = `url(../asset/img/right-triangle-with-square.png) no-repeat center/contain`;
     } else {
       result4.innerHTML = `<p>Type: Scalene</p>`;
       img.style.background =
-        "url(./Triangle-scalene.svg.png) no-repeat center/contain";
+        "url(../asset/img/Triangle-scalene.svg.png) no-repeat center/contain";
     }
   }
 });
